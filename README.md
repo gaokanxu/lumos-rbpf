@@ -1,11 +1,6 @@
-# solana_rbpf
-
-![](misc/rbpf_256.png)
+# lumos-rbpf
 
 Rust (user-space) virtual machine for eBPF
-
-[![Build Status](https://github.com/solana-labs/rbpf/actions/workflows/main.yml/badge.svg)](https://github.com/solana-labs/rbpf/actions/workflows/main.yml)
-[![Crates.io](https://img.shields.io/crates/v/solana_rbpf.svg)](https://crates.io/crates/solana_rbpf)
 
 ## Description
 
@@ -26,13 +21,13 @@ although the JIT-compiler does not work with Windows at this time.
 
 ## Link to the crate
 
-This crate is available from [crates.io](https://crates.io/crates/solana_rbpf),
+This crate is available from [crates.io](https://crates.io/crates/lumos-rbpf),
 so it should work out of the box by adding it as a dependency in your
 `Cargo.toml` file:
 
 ```toml
 [dependencies]
-solana_rbpf = "0.8.2"
+lumos-rbpf = "0.8.2"
 ```
 
 You can also use the development version from this GitHub repository. This
@@ -40,7 +35,7 @@ should be as simple as putting this inside your `Cargo.toml`:
 
 ```toml
 [dependencies]
-solana_rbpf = { git = "https://github.com/solana-labs/rbpf", branch = "main" }
+lumos-rbpf = { git = "https://github.com/gaokanxu/lumos-rbpf", branch = "main" }
 ```
 
 Of course, if you prefer, you can clone it locally, possibly hack the crate,
@@ -48,21 +43,21 @@ and then indicate the path of your local version in `Cargo.toml`:
 
 ```toml
 [dependencies]
-solana_rbpf = { path = "path/to/solana_rbpf" }
+lumos-rbpf = { path = "path/to/lumos-rbpf" }
 ```
 
 Then indicate in your source code that you want to use the crate:
 
 ```rust,ignore
-extern crate solana_rbpf;
+extern crate lumos-rbpf;
 ```
 
 ## API
 
 The API is pretty well documented inside the source code. You should also be
 able to access [an online version of the documentation from
-here](https://docs.rs/solana_rbpf/), automatically generated from the
-[crates.io](https://crates.io/crates/solana_rbpf)
+here](https://docs.rs/lumos-rbpf/), automatically generated from the
+[crates.io](https://crates.io/crates/lumos-rbpf)
 version (may not be up-to-date with master branch).
 [Examples](examples), [unit tests](tests) and [performance benchmarks](benches)
 should also prove helpful.
