@@ -1,5 +1,5 @@
 [package]
-name = "lumos-rbpf"
+name = "rbpf"
 version = "0.8.2"
 description = "Virtual machine and JIT compiler for eBPF programs"
 authors = ["Gao Kanxu <gaokanxu@gmail.com>"]
