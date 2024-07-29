@@ -182,7 +182,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a7a70ba024b9dc04c27ea2f0c0548feb474ec5c54bba33a7f72f873a39d07b24"
 
 [[package]]
-name = "lumos-rbpf"
+name = "rbpf"
 version = "0.8.2"
 dependencies = [
  "arbitrary",
@@ -388,7 +388,7 @@ name = "test_utils"
 version = "0.8.2"
 dependencies = [
  "libc",
- "lumos-rbpf",
+ "rbpf",
 ]
 
 [[package]]
